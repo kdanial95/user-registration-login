@@ -1,0 +1,11 @@
+# Dependencies
+/vendor
+
+# Misc
+/public/controllers/users.txt
+
+# System Files
+.DS_Store
+
+# Environment variable
+.env

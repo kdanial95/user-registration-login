@@ -1,0 +1,91 @@
+/* Basic styles for form layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn-login {
+  padding: 10px 15px;
+  background-color: #2b54da;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #1a45d5;
+}
+
+.btn-primary {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #45a049;
+  }
+
+.error {
+    width: calc(100% - 30px);
+    margin: 10px 0px;
+    padding: 10px;
+    color: red;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.131);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.success {
+    width: calc(100% - 30px);
+    margin: 10px 0px;
+    padding: 10px;
+    color: green;
+    border-radius: 5px;
+    background-color: rgba(26, 255, 0, 0.131);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

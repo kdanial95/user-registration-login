@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="header">User Registration</h2>
+        <form action="../controllers/AuthController.php" method="post">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="btn-primary" type="submit" name="register" value="user">Register</button>
+        </form>
+            <?php
+            if (isset($_REQUEST['success']) && $_REQUEST['success'] === 'true') {
+                echo "<div class='success'>You have been registered successfully.</div>";
+                echo "<form action='/login'>
+                <button type='submit' class='btn-login'>Click here to login</button>
+                <form>";
+            };
+
+            ?>
+    </div>
+</body>
+
+</html>
